@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DemoProject
 {
-    public class LectorArchivo
+    public class LectorArchivo : ILectorArchivo
     {
         public string LeerArchivo(string rutaArchivo)
         {
@@ -22,6 +22,6 @@ namespace DemoProject
 
     public interface ILectorArchivo
     {
-
+        string LeerArchivo(string rutaArchivo);
     }
 }

@@ -8,6 +8,22 @@ namespace DemoProject
 {
     public class ProcesadorPalabras
     {
-        
+        ILectorArchivo lector;
+
+        public ProcesadorPalabras(ILectorArchivo lectorArchivo)
+        {
+            this.lector = lectorArchivo;
+        }
+
+        public int ContarPalabras()
+        {
+            return lector.LeerArchivo("G:/WEBcore/PruebasUnitarias/ComandosDotnet.txt").
+                Split("").Count();
+        }
+
+        public int ContarCaracter()
+        {
+            return lector.LeerArchivo("G:/WEBcore/PruebasUnitarias/ComandosDotnet.txt").Length;
+        }
     }
 }
