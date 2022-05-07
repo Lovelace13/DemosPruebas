@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoProject
+
+namespace ClientDemo
 {
     public class ProcesadorPalabras
     {
-        readonly ILectorArchivo lector;
+        ILectorArchivo lector;
 
         public ProcesadorPalabras(ILectorArchivo lectorArchivo)
         {
@@ -18,7 +19,7 @@ namespace DemoProject
         public int ContarPalabras()
         {
             return lector.LeerArchivo("G:/WEBcore/PruebasUnitarias/ComandosDotnet.txt").
-                Split(" ").Count();
+                Split("").Count();
         }
 
         public int ContarCaracter()
