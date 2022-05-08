@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoTestN", "DemoTestN\Demo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{0D0525F3-39CE-4118-958C-E1545C6A9A19}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "ApiTest\Api.csproj", "{87025DF7-F28C-4C31-9A90-1293DF9EEFF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,18 @@ Global
 		{0D0525F3-39CE-4118-958C-E1545C6A9A19}.Release|x64.Build.0 = Release|Any CPU
 		{0D0525F3-39CE-4118-958C-E1545C6A9A19}.Release|x86.ActiveCfg = Release|x86
 		{0D0525F3-39CE-4118-958C-E1545C6A9A19}.Release|x86.Build.0 = Release|x86
+		{87025DF7-F28C-4C31-9A90-1293DF9EEFF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87025DF7-F28C-4C31-9A90-1293DF9EEFF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87025DF7-F28C-4C31-9A90-1293DF9EEFF5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{87025DF7-F28C-4C31-9A90-1293DF9EEFF5}.Debug|x64.Build.0 = Debug|Any CPU
+		{87025DF7-F28C-4C31-9A90-1293DF9EEFF5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{87025DF7-F28C-4C31-9A90-1293DF9EEFF5}.Debug|x86.Build.0 = Debug|Any CPU
+		{87025DF7-F28C-4C31-9A90-1293DF9EEFF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87025DF7-F28C-4C31-9A90-1293DF9EEFF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87025DF7-F28C-4C31-9A90-1293DF9EEFF5}.Release|x64.ActiveCfg = Release|Any CPU
+		{87025DF7-F28C-4C31-9A90-1293DF9EEFF5}.Release|x64.Build.0 = Release|Any CPU
+		{87025DF7-F28C-4C31-9A90-1293DF9EEFF5}.Release|x86.ActiveCfg = Release|Any CPU
+		{87025DF7-F28C-4C31-9A90-1293DF9EEFF5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
