@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Xunit;
-using Api;
+using Moq;
 using Api.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -14,8 +14,10 @@ namespace DemosPruebasUnitarias
         [Fact]
         public void GetWheatherForeCast()
         {
-            
-            var controlador = new WeatherForecastController();
+            var loggerMock = new Mock<ILogger<WeatherForecastController>>();
+            loggerMock.SetupAllProperties();
+
+            var controlador = new WeatherForecastController(loggerMock.Object);
             var result = controlador.Get();
 
             Assert.NotNull(result);
@@ -25,8 +27,9 @@ namespace DemosPruebasUnitarias
         [Fact]
         public void GetWheatherForeCast_ItemValues()
         {
+            var loggerMock = new Mock<ILogger<WeatherForecastController>>();
 
-            var controlador = new WeatherForecastController();
+            var controlador = new WeatherForecastController(loggerMock.Object);
             var result = controlador.Get().ToList()[0];
 
             Assert.NotNull(result);

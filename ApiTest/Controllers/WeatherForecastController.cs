@@ -15,22 +15,22 @@ namespace Api.Controllers
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        public WeatherForecastController()
-        {
-
-        }
-
-        //ILogger<WeatherForecastController> _logger;
-
-        //public WeatherForecastController( ILogger<WeatherForecastController> logger)
+        //public WeatherForecastController()
         //{
-        //    this._logger = logger;
+
         //}
+
+        ILogger<WeatherForecastController> _logger;
+
+        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        {
+            this._logger = logger;
+        }
 
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
-            //_logger.LogInformation("Getting weatherforecast...");
+            _logger.LogInformation("Getting weatherforecast...");
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
